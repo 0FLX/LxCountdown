@@ -1,5 +1,5 @@
 const currentDate = new Date();
-const newDate = new Date('1/1/30');
+const newDate = new Date('1/1/31');
 const timeDifference = newDate.getTime() - currentDate.getTime();
 
 const hourDifference = timeDifference / (60 * 60 * 1000);
