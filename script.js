@@ -2,6 +2,10 @@ const currentDate = new Date();
 const newDate = new Date('1/1/30');
 const timeDifference = newDate.getTime() - currentDate.getTime();
 
+const secondDifference = timeDifference / (60 * 1000);
+const secondResult = secondDifference.toFixed(0);
+document.getElementById("seconds").innerHTML = secondResult + " Seconds";
+
 const hourDifference = timeDifference / (60 * 60 * 1000);
 const hourResult = hourDifference.toFixed(0);
 document.getElementById("hours").innerHTML = hourResult + " Hours";
